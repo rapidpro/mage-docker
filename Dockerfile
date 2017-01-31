@@ -12,6 +12,7 @@ RUN wget "https://github.com/rapidpro/mage/releases/download/v$MAGE_VERSION/mage
     tar -xvf mage-$MAGE_VERSION-bundle.tar.gz && \
     rm mage-$MAGE_VERSION-bundle.tar.gz
 
+ENV REDIS_HOST=localhost
 ENV REDIS_DATABASE=8
 ENV TEMBA_HOST=localhost:8000 TEMBA_AUTH_TOKEN=none
 ENV TWITTER_API_KEY=none TWITTER_API_SECRET=none
